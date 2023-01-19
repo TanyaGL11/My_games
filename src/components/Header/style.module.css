@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(9, 157, 190);
+    
+  }
+  .title {
+    color: white;
+    font-size: 36px;
+  }
