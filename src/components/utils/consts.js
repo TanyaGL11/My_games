@@ -23,7 +23,7 @@ export const GAMES = [
     },
     {
         name: "NewGame",
-        description: "Игра ...Правила игры: ...",
+        description: "Игра Мишень. Правила игры: Нужно попасть в мишень...",
         img: "https://e7.pngegg.com/pngimages/723/225/png-clipart-video-game-consoles-game-controllers-others-game-electronics.png"
     },
 
