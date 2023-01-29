@@ -23,7 +23,7 @@ const calculateWinner = (field) => {
     return null
 }
 const TicTacToe = (i) => {
-    console.log(i)
+    
 }
 const Board = ({ field, currentPlayer, gameOver, onClick }) => {
     const board = new Array(9).fill(<></>)

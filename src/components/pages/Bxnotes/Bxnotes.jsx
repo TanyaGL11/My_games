@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+/* eslint-disable array-callback-return */
+/* eslint-disable react/no-direct-mutation-state */
+/* eslint-disable no-unused-vars */
+import React from 'react'
 import './style.module.css'
 
 const defaultParams = {
@@ -38,7 +41,7 @@ const gameField = {
 const panelStyle = {
     textAlign: 'center',
     fontSize: '30px',
-    color: '#000',
+    color: 'rgb(9, 157, 190)',
     backgroundColor: defaultParams.fieldColor,
     paddingTop: '40px',
     paddingBottom: '30px',
@@ -49,8 +52,8 @@ const messageStyle = {
     textAlign: 'center',
     fontSize: '43px',
     paddingTop: '65px',
-    
-}
+    color: 'rgb(9, 157, 190)',
+}    
 
 let gameParams = {...defaultParams}
 class Target extends React.Component {
@@ -65,7 +68,7 @@ class Target extends React.Component {
 
     clearTimeout = () => {
         clearTimeout(this.tooLate)
-        return true;
+        return true
     }
 
     constructor(props) {
@@ -156,7 +159,6 @@ class Bxnotes extends React.Component {
     }
 
     clickTarget = (id) => {
-        console.log(id)
         const _targets = [...this.state.targets]
         _targets.reduce(
             (acc, curr, i, arr) => {
@@ -187,7 +189,7 @@ class Bxnotes extends React.Component {
     render() {
         return (
             <div>
-                <div style={panelStyle}>
+                  <div style={panelStyle}>
                     {this.state.gameover !== true
                         && this.state.start === true
                         && `Попыток осталось: ${this.state.life} Попаданий: ${this.state.score}`

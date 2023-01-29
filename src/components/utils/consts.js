@@ -19,13 +19,27 @@ export const GAMES = [
     {
         name: "TicTacToe",
         description: "Игра Крестики-Нолики.Правила игры: ...",
-        img: "https://lh3.ggpht.com/tsj1hMIwVPx4aCEvemchfVeZR9RkVD93CqDwU09WAUe46y_Iygm2gC3GC91FjaBTmHJv"
+        img: "https://sun9-32.userapi.com/impf/DFh08ySUxaOBVtrQ6n0x3mtTHKEnreUlLwXwXw/9gxSJYj9sPc.jpg?size=604x602&quality=96&sign=6bd392486e8761d4f6aff41506716b89&type=album"
     },
     {
-        name: "NewGame",
+        name: "Target",
         description: "Игра Мишень. Правила игры: Нужно попасть в мишень...",
-        img: "https://e7.pngegg.com/pngimages/723/225/png-clipart-video-game-consoles-game-controllers-others-game-electronics.png"
+        img: "https://coloringhome.com/coloring/8Tz/7ML/8Tz7MLGTp.png"
     },
-
+    {
+        name: 'Snake',
+        description: 'Игра- Змейка. Правила игры: Нужно собрать все яблоки',
+        img: 'https://stadt-bremerhaven.de/wp-content/uploads/2019/09/chrome-snake-game-2-3-800x800.jpg',
+      },
+      {
+        name: 'Heroes',
+        description: 'Игра - Чей герой. Правила игры: собери героев верно на время',
+        img: 'https://cdn.game.net/image/upload/f_auto,q_auto/v1/game_img/merch2021/GameBlog/Marvel-VS-DC/Marvel-VS-DC-mb.jpg',
+      },
+      {
+        name: 'Dino',
+        description: 'Игра - Прогулка Dino. Правила игры: Осторожно кактус!',
+        img: 'https://www.expressstamp.ru/images/detailed/26/table-standart-t10-165.jpg',
+      },
 ]
 

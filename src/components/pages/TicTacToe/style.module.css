@@ -20,3 +20,6 @@
     justify-content: center;
     position: absolute;
 }
+.status {
+    width: 300px;
+}

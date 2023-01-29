@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState } from "react"
 import s from './style.module.css'
 import cn from "classnames"
@@ -9,19 +10,21 @@ import { FIELD_BATTLESHIP } from "../../utils/consts"
 const Cell = ({ isShip, onClick }) => {
   const [offended, setOffended] = useState(false)
   return (
-    <div
-      className={s.cell}
-      onClick={() => {
-        if (offended) return
-        setOffended(true)
-        onClick()
-      }}
-    >
-      <SquareIcon className={cn(s.square, { [s.offended]: offended && !isShip })} />
-      {offended && isShip && <CrossIcon className={s.cross} />}
-    </div>
+    <>
+      <div
+        className={s.cell}
+        onClick={() => {
+          if (offended) return
+          setOffended(true)
+          onClick()
+        }}
+      >
+        <SquareIcon className={cn(s.square, { [s.offended]: offended && !isShip })} />
+        {offended && isShip && <CrossIcon className={s.cross} />}
+      </div>
+    </>
   )
-};
+}
 
 const Board = ({ field, onClickCell }) => {
   const board = new Array(10).fill(new Array(10).fill(<></>))
@@ -51,12 +54,12 @@ export const Battleship = () => {
   return (
     <>
       {/* <header className={s.header}>BATTLESHIP</header>*/}
-        <div className={s.info}>
-          <div>Shots: {shots}</div>
-          <div>Hits: {hits}</div>
-        </div>
-        <Board field={FIELD_BATTLESHIP} onClickCell={onClickCell}></Board>
-      
+      <div className={s.info}>
+        <div>Shots: {shots}</div>
+        <div>Hits: {hits}</div>
+      </div>
+      <Board field={FIELD_BATTLESHIP} onClickCell={onClickCell}></Board>
+
     </>
   )
 }
